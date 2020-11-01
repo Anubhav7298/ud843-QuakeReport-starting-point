@@ -60,6 +60,7 @@ public final class QueryUtils {
                 String Time = properties.getString("time");
 
                 Earthquake earthquake = new Earthquake(Magnitude,Location,Time);
+                earthquakes.add(earthquake);
             }
 
         } catch (JSONException e) {
