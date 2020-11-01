@@ -4,11 +4,11 @@ public class Earthquake {
 
     private String mCity;
 
-    private String mTime;
+    private long mTime;
 
     private String mMag;
 
-    public Earthquake(String City, String Time,String Mag) {
+    public Earthquake(String City, long Time,String Mag) {
        mCity = City;
        mMag = Mag;
        mTime = Time;
@@ -19,7 +19,7 @@ public class Earthquake {
         return mCity;
     }
 
-    public String getTime() {
+    public long getTime() {
         return mTime;
     }
 

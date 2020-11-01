@@ -21,7 +21,14 @@
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/time_value"
+        android:id="@+id/date"
         android:layout_weight="1"
         android:padding="16dp"/>
+
+    <TextView
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/time"
+    android:layout_weight="1"
+    android:padding="16dp"/>
 </LinearLayout>
