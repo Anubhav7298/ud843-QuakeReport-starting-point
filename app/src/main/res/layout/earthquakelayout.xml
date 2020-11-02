@@ -21,6 +21,13 @@
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:id="@+id/split_city_value"
+        android:layout_weight="1"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:id="@+id/date"
         android:layout_weight="1"
         android:padding="16dp"/>

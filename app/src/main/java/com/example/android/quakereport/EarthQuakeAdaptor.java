@@ -40,6 +40,11 @@ public class EarthQuakeAdaptor extends ArrayAdapter<Earthquake> {
         // set this text on the name TextView
         cityTextView.setText(currentEarthquake.getCity());
 
+        TextView splitcityTextView = (TextView) listItemView.findViewById(R.id.split_city_value);
+        // Get the version name from the current AndroidFlavor object and
+        // set this text on the name TextView
+        splitcityTextView.setText(currentEarthquake.getSplitCity());
+
         TextView magTextView = (TextView) listItemView.findViewById(R.id.mag_value);
         // Get the version number from the current AndroidFlavor object and
         // set this text on the number TextView
