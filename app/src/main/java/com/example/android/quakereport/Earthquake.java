@@ -6,9 +6,9 @@ public class Earthquake {
 
     private long mTime;
 
-    private String mMag;
+    private int mMag;
 
-    public Earthquake(String City, long Time, String Mag) {
+    public Earthquake(String City, long Time, int Mag) {
        mCity = City;
        mMag = Mag;
        mTime = Time;
@@ -17,14 +17,14 @@ public class Earthquake {
 
     public String getCity() {
 
-        String []arr = mCity.split("of",2);
+        String []arr = mCity.split("of ",2);
         arr[0] = arr[0] + " of ";
         return arr[0];
     }
 
     public String getSplitCity() {
 
-        String []arr = mCity.split("of",2);
+        String []arr = mCity.split("of ",2);
         return arr[1];
     }
 
@@ -32,7 +32,7 @@ public class Earthquake {
         return mTime;
     }
 
-    public String getMag() {
+    public int getMag() {
         return mMag;
     }
 
