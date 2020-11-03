@@ -8,10 +8,13 @@ public class Earthquake {
 
     private int mMag;
 
-    public Earthquake(String City, long Time, int Mag) {
+    private String mUrl;
+
+    public Earthquake(String City, long Time, int Mag, String url) {
        mCity = City;
        mMag = Mag;
        mTime = Time;
+       mUrl = url;
     }
 
 
@@ -54,6 +57,10 @@ public class Earthquake {
 
     public int getMag() {
         return mMag;
+    }
+
+    public String getUrl() {
+        return mUrl;
     }
 
 
